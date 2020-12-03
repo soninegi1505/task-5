@@ -1,0 +1,52 @@
+//Javascript prototype method named bespacify which extends string to allow spaces
+ between each character of a string.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spacing function in javascript</title>
+</head>
+<body>
+<script type="text/javascript">
+String.prototype.bespacify = function() {
+	return this.split('').join(" ");
+};
+document.write("hello".bespacify());
+
+
+</script>
+</body>
+</html>
+
+
+
+// Javascript prototype method named bevowel which extends string to find all vowels
+in the input string.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bevowel javascript function</title>
+</head>
+<body>
+	<script type="text/javascript">
+	String.prototype.bevowel = function() {
+	return this.split("")
+	.map(function(i) {
+	if(i === "A" ||i === "e" || i === "E" || i === "I" ||i === "O" ||i === "U" ||i === "a" ||i ==="i" ||i === "o" ||i === "u"){
+	     return i;
+	 }
+	 return null;
+
+				
+	})
+	 .join("");
+     };
+  document.write("hello".bevowel());
+</script>
+
+</body>
+</html>
+
+
+
